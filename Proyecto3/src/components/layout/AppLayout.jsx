@@ -13,7 +13,7 @@ export const AppLayout = () => {
         {/* Mobile Header */}
         <header className="app-header">
           <button className="hamburger" onClick={() => setSidebarOpen(true)}>☰</button>
-          <span className="app-header__title">🍝 PastaERP</span>
+          <span className="app-header__title">PastaERP</span>
         </header>
         {/* Page Content */}
         <main className="app-content">
