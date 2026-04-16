@@ -1,0 +1,32 @@
+/* ---- Clientes ---- */
+.clientes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1rem;
+}
+.cliente-card { display: flex; flex-direction: column; gap: 0.875rem; }
+.cliente-card__header { display: flex; align-items: center; gap: 0.75rem; }
+.cliente-avatar {
+  width: 44px; height: 44px; border-radius: 50%; flex-shrink: 0;
+  background: linear-gradient(135deg, rgba(249,115,22,0.3), rgba(249,115,22,0.1));
+  border: 1px solid rgba(249,115,22,0.3);
+  display: flex; align-items: center; justify-content: center;
+  font-weight: 700; font-size: 0.85rem; color: var(--brand-primary);
+}
+.cliente-tipo-badge {
+  display: inline-block; margin-top: 0.2rem; padding: 0.15rem 0.55rem;
+  border-radius: 99px; font-size: 0.7rem; font-weight: 600;
+}
+.cliente-card__info { display: flex; flex-direction: column; gap: 0.2rem; }
+.cliente-card__stats {
+  display: flex; gap: 1rem; flex-wrap: wrap;
+  padding-top: 0.75rem; border-top: 1px solid var(--border-color);
+}
+.cliente-card__stats > div { display: flex; flex-direction: column; gap: 0.1rem; }
+.cliente-stat-label { font-size: 0.7rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-muted); }
+.cliente-stat-value { font-size: 0.95rem; font-weight: 700; color: var(--text-primary); }
+
+/* Reutilizar filter-tab de Pedidos */
+.filter-tab { padding: 0.35rem 0.75rem; border-radius: 6px; border: 1px solid transparent; font-family: inherit; font-size: 0.8rem; font-weight: 500; cursor: pointer; color: var(--text-secondary); background: transparent; transition: all var(--transition); }
+.filter-tab:hover { color: var(--text-primary); background: rgba(255,255,255,0.05); }
+.filter-tab--active { background: var(--bg-card); color: var(--text-primary); border-color: var(--border-color); }
